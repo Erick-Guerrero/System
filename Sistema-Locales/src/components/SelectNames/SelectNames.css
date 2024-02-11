@@ -1,0 +1,20 @@
+.custom-option {
+    display: flex;
+    justify-content: space-between;
+    padding: 5px 10px; /* Ajusta el espaciado según tus necesidades */
+    background-color: #114d40;
+    color: white;
+  }
+  
+  .name {
+    flex: 1;
+  }
+  
+  .hr {
+    margin-left: 10px; /* Espacio entre el nombre y la hora */
+  }
+  
+
+  .customSelect{
+    border: 0.5px solid black;
+  }
