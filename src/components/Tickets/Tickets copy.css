@@ -1,0 +1,213 @@
+.contenedorGlobal {
+  margin: 10px;
+  border: 4px solid #89c3b7;
+  border-radius: 20px;
+}
+
+.container {
+  display: grid;
+  grid-template-columns: 1fr 1fr; /* Dos columnas para los pares de campos */
+  gap: 20px; /* Espacio vertical entre los pares de campos */
+  justify-content: center; /* Centra horizontalmente el contenido en el .container */
+}
+
+.ContainerCenter {
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+}
+
+.selectLot {
+  width: 200px;
+  border-radius: 15px 15px 0px 0px;
+  margin-bottom: 10px;
+}
+
+.contenedorInput {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  margin-bottom: 10px;
+  margin-left: 20px;
+}
+
+/* Añade una nueva regla para centrar los botones en la versión de escritorio */
+.btForm {
+  display: flex;
+  justify-content: center;
+}
+.btForm1 {
+  display: flex;
+  background-color: rgba(216, 17, 17, 0.836) ;
+  justify-content: center;
+  align-items: center;
+  height: 20px;
+  width: 20px;
+}
+
+
+.btForm button {
+  background-color: #005643;
+  color: white;
+  padding: 14px;
+  border-radius: 30px;
+  font-family: 'Plexus Sans', sans-serif;
+  font-weight: 700;
+}
+
+.btForm button:hover {
+  /* Estilos para los botones dentro de elementos con la clase btForm cuando se pasa el mouse por encima */
+  /* Por ejemplo, puedes cambiar el color de fondo o el color del texto al pasar el mouse */
+  background-color: #090909;
+  color: #ffffff;
+  /* ...otros estilos... */
+}
+
+.btFormDis {
+  display: flex;
+  justify-content: center;
+}
+
+.btFormDis button {
+  background-color: lightgray;
+  color: gray;
+  padding: 14px;
+  border-radius: 20px;
+  font-family: 'Plexus Sans', sans-serif;
+  font-weight: 700;
+}
+
+.titleInfo {
+  align-self: center;
+  margin-left: 10px;
+  font-size: 15px !important;
+  color: #89c3b7 !important;
+  outline: none !important;
+  font-family: 'Plexus Sans', sans-serif;
+  font-weight: 700;
+}
+
+.letras {
+  width: 8rem;
+  align-self: center;
+  border-radius: 30px !important;
+  border: 3px solid rgb(118, 137, 118) !important;
+  background-color: #ffffff !important;
+  padding: 10px !important;
+  font-size: 14px !important;
+  color: #005643 !important;
+  font-family: 'Plexus Sans', sans-serif;
+  font-weight: 700;
+  width: 200px;
+  margin-left: 5px;
+  margin-bottom: 10px;
+}
+
+.letras:focus {
+  border: 2px solid #000;
+  outline: none;
+  box-shadow: 0 0 5px #000;
+}
+
+.letras option {
+  background-color: #ffffff;
+  color: #005643;
+  font-family: 'Plexus Sans', sans-serif;
+  font-weight: 700;
+  font-size: 16px;
+}
+
+.ContainerCenterButtons {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  gap: 20px;
+}
+
+.contenedorTable {
+  width: auto; /* Cambia esto al ancho que prefieras */
+  height: 200px; /* Cambia esto a la altura que prefieras */
+  overflow-y: auto; /* Habilita el desplazamiento vertical si el contenido sobrepasa la altura */
+  overflow-x: auto; /* Habilita el desplazamiento horizontal si el contenido sobrepasa el ancho */
+}
+
+/* Estilo de la versión móvil (ancho menor o igual a 639px) */
+@media (max-width: 639px) {
+
+  .ColumCel {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .ContainerForm {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .selectLot {
+    width: 190px;
+    border-radius: 15px;
+    margin-bottom: 10px;
+  }
+
+  .ContainerCenter {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+  }
+
+  .ContainerCenterButtons {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+  }
+
+  .contenedorGlobal {
+    width: 300px;
+    border: 1px solid black;
+    border-radius: 20px;
+    margin-bottom: 20px;
+    padding: 10px;
+  }
+
+  .letras {
+    width: 8rem;
+    border-radius: 30px !important;
+    border: 3px solid rgb(118, 137, 118) !important;
+    background-color: #ffffff !important;
+    margin-bottom: 10px;
+    font-size: 14px !important;
+    color: #005643 !important;
+    font-family: 'Plexus Sans', sans-serif;
+    font-weight: 700;
+  }
+
+  .container {
+    display: grid;
+    grid-template-columns: 2fr 1fr; /* Cambia a una sola columna en dispositivos móviles */
+    grid-row-gap: 10px;
+    justify-content: center;
+  }
+
+  .input-container {
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    margin-left: 10px;
+  }
+
+  .contenedorInput {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    margin-left: 0px;
+  }
+
+}

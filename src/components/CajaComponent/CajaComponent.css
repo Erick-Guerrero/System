@@ -1,0 +1,47 @@
+.centerCajaCont {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.caja {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 600px;
+    background-color: white;
+    border-radius: 8px;
+    box-shadow: inset 0px 0px 43px -19px rgb(59, 59, 59);
+    padding: 20px;
+}
+
+.tituloCaja {
+    font-size: 20px;
+    font-weight: bold;
+    color: #005643;
+
+}
+
+.contenidoCaja {
+    display: flex;
+    justify-content: center; /* Centrar las columnas */
+    width: 100%;
+    margin-top: 10px;
+}
+
+
+
+.saldoCaja {
+    font-size: 15px;
+    font-weight: bold;
+    color: rgb(0, 0, 0);
+    padding: 12px;
+}
+
+
+.Tbutton {
+    display: flex;
+    justify-content: center;
+}
+

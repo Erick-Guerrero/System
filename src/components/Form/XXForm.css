@@ -1,0 +1,85 @@
+.mainContainerForm {
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    margin-top: 30px;
+}
+
+
+.contenedorInput{
+    margin-bottom:30px;
+}
+
+.btForm {
+    display: flex;
+    justify-content: center;
+}
+
+.btForm button {
+  background-color: #005643;
+  color:white;
+  padding: 14px;
+  border-radius: 20px;
+  font-family: 'Plexus Sans', sans-serif;   
+  font-weight: 700;
+}
+.btForm button:hover {
+  /* Estilos para los botones dentro de elementos con la clase btForm cuando se pasa el mouse por encima */
+  /* Por ejemplo, puedes cambiar el color de fondo o el color del texto al pasar el mouse */
+  background-color: #090909;
+  color: #ffffff;
+  /* ...otros estilos... */
+}
+
+.btFormDis {
+    display: flex;
+    justify-content: center;
+}
+.btFormDis button {
+  background-color: lightgray;
+  color:gray;
+  padding: 14px;
+  border-radius: 20px;
+  font-family: 'Plexus Sans', sans-serif;   
+  font-weight: 700;
+}
+
+.titleInfo {
+    margin-left: 20px;
+    font-size: 10px !important; /* Tamaño de fuente */
+    color: #005643 !important; /* Color de texto */
+    outline: none !important; /* Elimina el borde de enfoque (resaltado) al hacer clic */
+    font-family: 'Plexus Sans', sans-serif;   
+    font-weight: 700;
+}
+
+
+
+.letras {
+    width: 100% ;
+    border-radius: 30px !important;
+    border: 3px solid rgb(118, 137, 118) !important;
+    background-color: #ffffff !important; /* #f0f0f0 */
+    padding: 10px !important; /* Espacio interno para contenido */
+    font-size: 14px !important; /* Tamaño de fuente */
+    color: #005643 !important; /* Color de texto */
+    font-family: 'Plexus Sans', sans-serif;   
+    font-weight: 700;
+  }
+  
+  .letras:focus {
+    border: 2px solid #000; /* Cambia el borde cuando está enfocado */
+    outline: none; /* Elimina el resaltado predeterminado al hacer clic */
+    box-shadow: 0 0 5px #000; /* Agrega una sombra cuando está enfocado */
+    /* Otros estilos de tu preferencia cuando está enfocado */
+  }
+
+  .letras option {
+    /* Estilos para las opciones, puedes personalizarlos según tus preferencias */
+    background-color: #ffffff; /* Fondo de las opciones */
+    color: #005643 ; /* Color de texto */
+    font-family: 'Plexus Sans', sans-serif;   
+    font-weight: 700;
+    font-size: 16px;
+  }
+

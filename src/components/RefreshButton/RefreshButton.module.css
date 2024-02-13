@@ -1,0 +1,22 @@
+.btForm {
+    display: flex;
+    justify-content: center;
+  }
+  
+  .btForm button {
+    /* width: 182px; */
+    background-color: #005643;
+    color:white;
+    padding: 14px;
+    margin: 0.5rem;
+    border-radius: 20px;
+    font-family: 'Plexus Sans', sans-serif;   
+    font-weight: 700;
+  }
+  .btForm button:hover {
+    /* Estilos para los botones dentro de elementos con la clase btForm cuando se pasa el mouse por encima */
+    /* Por ejemplo, puedes cambiar el color de fondo o el color del texto al pasar el mouse */
+    background-color: #090909;
+    color: #ffffff;
+    /* ...otros estilos... */
+  }

@@ -1,0 +1,115 @@
+
+.btForm {
+  display: flex;
+  justify-content: center;
+}
+
+.btForm button {
+  /* width: 182px; */
+  background-color: #005643;
+  color:white;
+  padding: 14px;
+  margin: 0.5rem;
+  border-radius: 20px;
+  font-family: 'Plexus Sans', sans-serif;   
+  font-weight: 700;
+}
+.btForm button:hover {
+  /* Estilos para los botones dentro de elementos con la clase btForm cuando se pasa el mouse por encima */
+  /* Por ejemplo, puedes cambiar el color de fondo o el color del texto al pasar el mouse */
+  background-color: #090909;
+  color: #ffffff;
+  /* ...otros estilos... */
+}
+
+
+.btFormDis {
+  display: flex;
+  justify-content: center;
+}
+
+.btFormDis button {
+  background-color: lightgray;
+  color: gray;
+  padding: 14px;
+  border-radius: 20px;
+  font-family: 'Plexus Sans', sans-serif;
+  font-weight: 700;
+}
+
+.threeButtons{
+  display: flex;
+  flex-direction: row;
+}
+
+.titleContainer {
+    display: flex;
+    flex-direction: column;
+    padding: 5px;
+    align-items: center;
+    border-radius: 20px;
+    width: 100%;
+    font-style: normal;
+    font-weight: 600;
+    font-size: 20px;
+    background-color: #d1efe9;
+    color: #005643;
+  }
+
+  .card {
+    background-color: #ffffff;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    padding: 20px;
+    width: 300px;
+    margin: 0 auto;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  }
+
+  .containerRow {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    gap: 20px;
+  }
+  
+  .titleContainer {
+    text-align: center;
+    margin-bottom: 15px;
+  }
+  
+  .cardContent {
+    display: flex;
+    flex-direction: column;
+    
+  }
+  
+  .cardItem {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 10px;
+  }
+  
+  .cardItem h3 {
+    color: #005643;
+    margin: 0;
+    font-size: 16px;
+    font-weight: bold;
+  }
+  
+  .cardItem p {
+    color: #090909;
+    margin: 0;
+    font-size: 14px;
+  }
+  
+  @media screen and (max-width: 600px) {
+
+.threeButtons{
+  display: flex;
+  flex-direction: column;
+}
+  
+  }

@@ -1,0 +1,143 @@
+/* Clientes.css */
+* {
+    font-family: sans-serif;
+}
+
+.filtroClientes {
+    padding: 10px;
+    font-size: 10px ; /* Tamaño de fuente */
+    color: #d1efe9 ; /* Color de texto */
+    outline: none ; /* Elimina el borde de enfoque (resaltado) al hacer clic */
+    font-family: 'Plexus Sans', sans-serif;   
+    font-weight: 700;
+}
+
+.letrasSelect {
+    border-radius: 15px 15px 0px 0px;
+    border: 3px solid rgb(118, 137, 118) ;
+    background-color: #ffffff ; /* #f0f0f0 */
+    padding: 10px ; /* Espacio interno para contenido */
+    font-size: 14px ; /* Tamaño de fuente */
+    color: #005643 ; /* Color de texto */
+    font-family: 'Plexus Sans', sans-serif;   
+    font-weight: 700;
+  }
+  
+  .letrasSelect option {
+    /* Estilos para las opciones, puedes personalizarlos según tus preferencias */
+    background-color: #ffffff; /* Fondo de las opciones */
+    color: #005643 ; /* Color de texto */
+    font-family: 'Plexus Sans', sans-serif;   
+    font-weight: 700;
+    font-size: 16px;
+  }
+
+.selectContainer {
+    display: flex;
+    flex-direction: column;
+    padding: 5px;
+    align-items: center;
+    width: 100%;
+    font-style: normal;
+    font-weight: 600;
+    font-size: 15px;
+    color:#005643;
+}
+
+.titleContainer {
+    display: flex;
+    flex-direction: column;
+    padding: 5px;
+    align-items: center;
+    width: 100%;
+    font-style: normal;
+    font-weight: 600;
+    font-size: 20px;
+    background-color: #d1efe9;
+    color:#005643;
+}
+
+.contenedorTable {
+    display: flex;
+    justify-content: center;
+}
+
+.content-table {
+    border-collapse: collapse;
+    margin: 25px 0;
+    font-size: 0.9em;
+    min-width: 200px;
+    border-radius: 5px 5px 0 0;
+    overflow: hidden;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.15);
+}
+
+.content-table thead tr {
+    background-color: #009879;
+    color: #ffffff;
+    text-align: center;
+    font-weight: bold;
+}
+
+.content-table th,
+.content-table td {
+    padding: 12px 15px;
+    text-align: center;
+}
+
+.content-table tbody tr {
+    border-bottom: 1px solid #dddddd;
+}
+
+.content-table tbody tr:nth-of-type(even) {
+    background-color: #f3f3f3;
+}
+
+.content-table tbody tr:last-of-type {
+    border-bottom: 2px solid #009879;
+}
+
+.content-table tbody tr.active-row {
+    font-weight: bold;
+    color: #009879;
+}
+
+
+
+/* Clients.css */
+/* Agrega esta regla @media al final del archivo CSS para ocultar las columnas en dispositivos móviles */
+@media (max-width: 768px) {
+    .tabla-clientes th:nth-child(4),
+    .tabla-clientes td:nth-child(4),
+    
+    .tabla-clientes th:nth-child(6),
+    .tabla-clientes td:nth-child(6),
+    
+    .tabla-clientes td:nth-child(7),
+    .tabla-clientes th:nth-child(8),
+    .tabla-clientes td:nth-child(8),
+    .tabla-clientes th:nth-child(9),
+    .tabla-clientes td:nth-child(9)  {
+      display: none;
+    }
+
+
+    .tabla-clientes {
+        font-size: 0.7em;
+    }
+  }
+  
+
+  @media (max-width: 768px) {
+    .tabla-tickets th:nth-child(4),
+    .tabla-tickets td:nth-child(4),
+    .tabla-tickets th:nth-child(5),
+    .tabla-tickets td:nth-child(5)  {
+      display: none;
+    }
+
+
+    .tabla-tickets {
+        font-size: 0.7em;
+    }
+  }

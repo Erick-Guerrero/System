@@ -1,0 +1,27 @@
+.centerContainer{
+    display: flex;
+    justify-content: center;
+}
+.caja {
+    width: 500px;
+    display: flex;
+    flex-direction: column;
+    background-color: #f5f5f5;
+    padding: 20px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    margin: 20px;
+    text-align: center;
+    font-weight: bold;
+    box-shadow: inset 0px 0px 28px -8px BLACK;
+  }
+  
+  .saldo {
+    font-size: 20px;
+    margin-bottom: 10px;
+  }
+  
+  .total-caja {
+    font-size: 24px;
+    color: #007bff; /* Cambia el color a tu preferencia */
+  }
