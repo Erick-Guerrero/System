@@ -139,6 +139,7 @@ export default function Table() {
               <th>Id</th>
               <th>Validación</th>
               <th>Loteria</th>
+              <th className={styles.columnaRenderTicket}>Cliente</th> 
               <th className={styles.columnaRenderTicket}>Creado</th>
               <th className={styles.columnaRenderTicket}>Hora</th>
               <th className={styles.columnaRenderTicket}>Estado</th>
@@ -155,6 +156,7 @@ export default function Table() {
                   <td>{c.idTicket}</td>
                   <td>{isCodeExpired(c.createdAt) ? '******' : c.validationCode}</td>
                   <td>{c.lotteryName} - {formatTime(c.lotteryHr)}</td>
+                  <td className={styles.columnaRenderTicket}>{c.name} {c.surname}</td>
                   <td className={styles.columnaRenderTicket}>{formatFecha(c.createdAt)}</td>
                   <td className={styles.columnaRenderTicket}>{new Date(c.createdAt).toLocaleTimeString("en-US", {
       hour: "2-digit",
