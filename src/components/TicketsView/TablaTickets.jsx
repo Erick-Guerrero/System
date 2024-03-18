@@ -21,6 +21,8 @@ export default function Table() {
     return value !== null ? value.toFixed(1) : '-';
   };
 
+  console.log(filtertickets);
+
   const handleStartDateChange = (dateString) => {
     const formattedDate = dateString ? new Date(`${dateString}T23:59:59`) : null;
     if (formattedDate) {
@@ -156,7 +158,7 @@ export default function Table() {
                   <td>{c.idTicket}</td>
                   <td>{isCodeExpired(c.createdAt) ? '******' : c.validationCode}</td>
                   <td>{c.lotteryName} - {formatTime(c.lotteryHr)}</td>
-                  <td className={styles.columnaRenderTicket}>{c.name} {c.surname}</td>
+                  <td className={styles.columnaRenderTicket}>{c.Client.name} {c.Client.surname}</td>
                   <td className={styles.columnaRenderTicket}>{formatFecha(c.createdAt)}</td>
                   <td className={styles.columnaRenderTicket}>{new Date(c.createdAt).toLocaleTimeString("en-US", {
       hour: "2-digit",
