@@ -42,7 +42,7 @@ const ApuestaForm = () => {
       },
     ],
   });
-  console.log(formData.apuestas[0].hr);
+  console.log(formData.apuestas[0]);
 
 
   const calcularMontoTotal = () => {
@@ -179,6 +179,8 @@ const ApuestaForm = () => {
 
       // Actualizar hrLottery dentro del objeto apuestas en el índice correspondiente
       updatedApuestas[index].hrLottery = hourCliente;
+
+
     }
 
     // Actualizar el estado con las apuestas actualizadas
@@ -186,6 +188,7 @@ const ApuestaForm = () => {
       ...formData,
       apuestas: updatedApuestas,
       hrClient: getCurrentTime(),
+
     });
 
     const isValid = updatedApuestas.every(
